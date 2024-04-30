@@ -1,0 +1,68 @@
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.calculator input[type="text"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right;
+    background-color: #4c4b4b;
+    color: #ffffff;
+}
+
+.calculator input[type="button"] {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.calculator input[type="button"].orange {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.calculator input[type="button"].orange:hover {
+    background-color: darkorange;
+}
+
+.calculator input[type="button"].black {
+    background-color: #333;
+    color: white;
+}
+
+.calculator input[type="button"].black:hover {
+    background-color: #201f1f;
+}
+
+.calculator .row {
+    display: flex;
+}
+
+.calculator .row input[type="button"] {
+    flex: 1;
+}
